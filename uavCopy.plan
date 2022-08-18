@@ -1,0 +1,53 @@
+{
+    "fileType": "Plan",
+    "geoFence": {
+        "breachReturn": [39.35071391254498,-76.34489888511288,10],
+        "circles": [],
+        "polygons": [],
+        "version": 2
+    },
+    "groundStation": "QGroundControl",
+    "mission": {
+        "cruiseSpeed": 3,
+        "firmwareType": 12,
+        "hoverSpeed": 5,
+        "items": [
+            {
+                "TransectStyleComplexItem": {
+                    "CameraCalc": {
+                        "AdjustedFootprintFrontal": 25,
+                        "AdjustedFootprintSide": 10,
+                        "CameraName": "Manual (no camera specs)",
+                        "DistanceToSurface": 15,
+                        "DistanceToSurfaceRelative": true,
+                        "version": 1
+                    },
+                    "CameraShots": 22,
+                    "CameraTriggerInTurnAround": true,
+                    "FollowTerrain": false,
+                    "HoverAndCapture": false,
+                    "Items": [ ],
+                    "Refly90Degrees": false,
+                    "TurnAroundDistance": 0,
+                    "VisualTransectPoints": [[39.35071391254498,-76.34489888511288],[39.350445240700225,-76.34558239782373],[39.3503552379691,-76.34558205366463],[39.35026523523658,-76.34558170950969],[39.35017549964215,-76.34546544244458],[39.35044550784836,-76.34546647446312],[39.3505357776166,-76.34535089496413],[39.34999576118258,-76.34534883183204],[39.34999602808525,-76.34523290920674],[39.35053604453669,-76.34523497144639],[39.35062631408128,-76.34511939149698],[39.35008629762067,-76.34511733012465],[39.35008656429527,-76.34500140734225],[39.35071658351485,-76.34500381125008]],
+                    "version": 1
+                },
+                "angle": 83,
+                "complexItemType": "survey",
+                "entryLocation": 0,
+                "flyAlternateTransects": false,
+                "polygon": [[39.355038,-76.345028],[39.35517133,-76.34516133],[39.35570467,-76.34489467],[39.355838,-76.344628],[39.35530467,-76.34449467]]
+                "version": 5
+            }
+        ],
+        "plannedHomePosition": [39.35071391254498,-76.34489888511288,10],
+        "vehicleType": 2,
+        "version": 2
+    },
+    "rallyPoints": {
+        "points": [
+        ],
+        "version": 2
+    },
+    "version": 1
+}
