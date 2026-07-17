@@ -7,7 +7,7 @@ listOfMacs = []
 
 
 def replacement(file, previousw, nextw):
-   for line in fileinput.input(file, inplace=38):
+   for line in fileinput.input(file, inplace=True):
        line = line.replace(previousw, nextw)
        sys.stdout.write(line)
 
