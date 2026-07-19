@@ -1,6 +1,9 @@
 import numpy as np
 import fileinput
 import sys
+from pathlib import Path
+
+SCRIPT_DIR = Path(__file__).resolve().parent
 
 
 listOfMacs = []
@@ -38,7 +41,7 @@ def convertPolygonPoints(lines):
 
     return finalSet
 
-with open(r"C:\Users\Yaphet\PycharmProjects\pythonProject\polygon.yaml", "r") as reader:
+with open(SCRIPT_DIR / "polygon.yaml", "r") as reader:
     for line in reader.readlines():
         listOfMacs.append(line)
 
@@ -70,7 +73,7 @@ otherMacs = []
 
 reader.close()
 
-with open(r"C:\Users\Yaphet\PycharmProjects\pythonProject\uavCopy.plan", "r") as reader2:
+with open(SCRIPT_DIR / "uavCopy.plan", "r") as reader2:
     for line in reader2.readlines():
         otherMacs.append(line)
 
@@ -89,7 +92,7 @@ for x in range(1, len(plan) - 1):
     myString += "," + fixedString
 
 myString = "                \"polygon\": [" + myString
-myString = myString + "]"
+myString = myString + "],\n"
 
 print(myString)
 
@@ -97,7 +100,7 @@ otherMacs[38] = myString
 
 print(otherMacs)
 reader2.close()
-with open("C:\\Users\\Yaphet\\PycharmProjects\\pythonProject\\uavCopy.plan", "w") as file:
+with open(SCRIPT_DIR / "uavCopy.plan", "w") as file:
     for line in otherMacs:
         line = line.replace('test', 'testZ')
         file.write(line)
