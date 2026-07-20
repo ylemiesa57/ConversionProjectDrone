@@ -102,5 +102,4 @@ print(otherMacs)
 reader2.close()
 with open(SCRIPT_DIR / "uavCopy.plan", "w") as file:
     for line in otherMacs:
-        line = line.replace('test', 'testZ')
         file.write(line)
