@@ -71,8 +71,6 @@ plan = np.add(XandY, homePoint)
 
 otherMacs = []
 
-reader.close()
-
 with open(SCRIPT_DIR / "uavCopy.plan", "r") as reader2:
     for line in reader2.readlines():
         otherMacs.append(line)
@@ -94,12 +92,8 @@ for x in range(1, len(plan) - 1):
 myString = "                \"polygon\": [" + myString
 myString = myString + "],\n"
 
-print(myString)
-
 otherMacs[38] = myString
 
-print(otherMacs)
-reader2.close()
 with open(SCRIPT_DIR / "uavCopy.plan", "w") as file:
     for line in otherMacs:
         file.write(line)
