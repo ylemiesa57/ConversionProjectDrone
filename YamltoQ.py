@@ -54,18 +54,9 @@ for x in range (9, len(listOfMacs)) :
 XandY = convertPolygonPoints(newArray)
 #print(XandY)
 
-homePoint = [39.355038, -76.345028]
+homePoint = np.array([39.355038, -76.345028])
 
-for x in range(len(XandY)-1):
-    XandY[x] = np.array(XandY[x])
-    for z in range(len(XandY[x]) - 1):
-        XandY[x][z] = XandY[x][z].astype(float)
-
-homePoint = np.array(homePoint)
-homePoint[0] = homePoint[0].astype(float)
-homePoint[1] = homePoint[1].astype(float)
-
-XandY = np.divide(XandY,150000)
+XandY = np.divide(XandY, 150000)
 plan = np.add(XandY, homePoint)
 #(str(plan))
 
