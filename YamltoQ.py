@@ -1,6 +1,4 @@
 import numpy as np
-import fileinput
-import sys
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -8,11 +6,6 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 
 listOfMacs = []
 
-
-def replacement(file, previousw, nextw):
-   for line in fileinput.input(file, inplace=True):
-       line = line.replace(previousw, nextw)
-       sys.stdout.write(line)
 
 def convertPolygonPoints(lines):
     finalSet = []
