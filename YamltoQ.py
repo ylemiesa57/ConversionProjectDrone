@@ -67,7 +67,7 @@ fixedString1 = str(plan[0])[0 : middleInt1] + "," + str(plan[0])[middleInt1 + 1 
 fixedString1 = fixedString1[0] + fixedString1[2:]
 myString = fixedString1
 
-for x in range(1, len(plan) - 1):
+for x in range(1, len(plan)):
     middleInt = int(len(str(plan[x])) / 2)
     fixedString = str(plan[x])[0 : middleInt] + "," + str(plan[x])[middleInt + 1 : len(str(plan[x]))]
     fixedString = fixedString[0] + fixedString[2:]
