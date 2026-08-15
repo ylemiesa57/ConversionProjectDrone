@@ -37,6 +37,8 @@
                 "entryLocation": 0,
                 "flyAlternateTransects": false,
                 "polygon": [[39.355038,-76.345028],[39.35517133,-76.34516133],[39.35570467,-76.34489467],[39.355838,-76.344628],[39.35530467,-76.34449467],[39.355038,-76.345028]],
+                "splitConcavePolygons": false,
+                "type": "ComplexItem",
                 "version": 5
             }
         ],
